@@ -1,0 +1,92 @@
+*{
+    outline: none;
+}
+body {
+    font-size: 16px;
+    background: #000;
+    color: #ddd;
+}
+li {
+    display: flex;
+    align-items: center;
+}
+input {
+    padding-left: 1rem;
+    height: 2rem;
+    width: 40rem;
+    border: none;
+    border-radius: 1rem;
+    background: #000;
+    color: #ddd;
+}
+h1 {
+    font-size: 3rem;
+    color: rgb(0, 128, 0);
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background: rgb(37, 37, 37);
+}
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h1_style {
+    font-size: 2.5rem;
+    color: #ddd;
+}
+.add_button {
+    margin-left: 0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: none;
+    background: url(./img/plus.svg);
+}
+.task_list {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.list_element {
+    position: relative;
+    padding-right: 6rem;
+    border-bottom: 1px solid rgb(0, 128, 0);
+    text-align: start;
+    color: #ddd;
+    list-style: none;
+}
+.delete_list_element {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    color: rgb(255, 0, 0);
+    transition: 0.5s;
+}
+.list_element:hover > .delete_list_element {
+    opacity: 1;
+    transition: 0.5s;
+}
+.test {
+    position: relative;
+}
+.test_delete {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 5px;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: url(./img/bin.svg);
+   /* opacity: 0;*/
+}
+.test_delete:hover {
+    /*opacity: 1;*/
+    background: url(./img/bin_hover.svg);
+}
